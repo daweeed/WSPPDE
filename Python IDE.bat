@@ -6,7 +6,6 @@ REM * Batch script to start the PyScripter IDE.
 REM *
 REM * @package     WSPPDE
 REM * @author      cwsoft (http://cwsoft.de)
-REM * @version     1.0.0
 REM * @copyright   cwsoft
 REM * @license     http://www.opensource.org/licenses/bsd-license.php
 REM **************************************************************************

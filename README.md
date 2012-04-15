@@ -8,7 +8,7 @@ What `WSPPDE` is all about can best be seen from the screenshot below.
 
 - Python v2.7.3 including the packages:
     - Setuptools v0.6c11, PIP v1.1
-    - NumPy v1.6.1, SciPy v0.10.1, Matplotlib v1.1.0
+    - NumPy v1.6.1, SciPy v0.10.1, Matplotlib v1.1.0, Pandas v0.7.3
     - IPython v0.12 (incl. PyReadline v2.0-dev, pyzmq v2.1.11, Tornado 2.2)
 - Python IDE PyScripter v2.5.3
 - Enhanced command Console v2.0
@@ -16,7 +16,7 @@ What `WSPPDE` is all about can best be seen from the screenshot below.
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
 
-1. Download latest [WSPPDE Windows installer](https://github.com/downloads/cwsoft/cwsoft-WSPPDE/cwsoft-WSPPDE-v1.0.0.exe)
+1. Download [WSPPDE v1.1.0](https://github.com/downloads/cwsoft/cwsoft-WSPPDE/cwsoft-WSPPDE-v1.1.0.exe) Windows installer
 2. Excecute the installer and unpack the files to the desired target directory
 
 ## Usage
@@ -29,13 +29,19 @@ To start the enhanced command shell, excecute `Console.bat`. The Python interpre
 ## Documentation
 The links below provide further information about the packages used in WSPPDE.
 
-- [Python](http://python.org), [Docu](http://docs.python.org/)
-- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
-- [IPython](http://ipython.org/), [PyReadline](https://launchpad.net/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
 - [PyScripter](http://code.google.com/p/pyscripter/)
 - [Console](http://sourceforge.net/projects/console/)
+
+- [Python](http://python.org), [Docu](http://docs.python.org/)
+	- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+	- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+	- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
+	- [Pandas](http://code.google.com/p/pandas/), [Docu](http://pandas.pydata.org/)
+	
+	- [IPython](http://ipython.org/), [Docu](http://ipython.org/ipython-doc/rel-0.12/index.html)
+		- [PyReadline](https://launchpad.net/pyreadline)
+		- [pyzmq](http://www.zeromq.org/bindings:python)
+		- [Tornado](http://www.tornadoweb.org/)
 
 ## License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  
