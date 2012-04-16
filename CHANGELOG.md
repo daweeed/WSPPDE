@@ -1,10 +1,11 @@
 # CHANGELOG
 
 ***Legend:***
-+ = Added
-- = Removed
-# = Bugfix
-! = Update/Change
+
+	+ = Added
+	- = Removed
+	# = Bugfix
+	! = Update/Change
 
 ## v1.2.0-dev: April 16, 2012 (http://cwsoft.de)
 + ipython-0.13.dev-py2.7.egg
