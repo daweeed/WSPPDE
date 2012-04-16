@@ -1,18 +1,19 @@
 # CHANGELOG
 
 ***Legend:***
-+ = Added
-- = Removed
-# = Bugfix
-! = Update/Change
+
+	+ = Added
+	- = Removed
+	# = Bugfix
+	! = Update/Change
 
 ## v1.2.0-dev: April 16, 2012 (http://cwsoft.de)
-+ ipython-0.13.dev-py2.7.egg
-- ipython-0.12.win32-setup.exe
+\+ ipython-0.13.dev-py2.7.egg
+\- ipython-0.12.win32-setup.exe
 
 ## v1.1.0: April 14, 2012 (http://cwsoft.de)
-+ CHANGELOG.md
-+ pandas-0.7.3.win32-py2.7.exe
+\+ CHANGELOG.md
+\+ pandas-0.7.3.win32-py2.7.exe
 
 ## v1.0.0: April 13, 2012 (http://cwsoft.de)
 Initial release of WSPPDE including:
