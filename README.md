@@ -1,22 +1,30 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console. Changes are tracked via the [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md) file.
 
-What `WSPPDE` is all about can best be seen from the screenshot below.
+What `WSPPDE` is all about can best be seen from the screenshot below (based on v1.1.0):
 ![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-***The following third party components are distributed with WSPPDE:***
+The following third party components are included in ***WSPPDE v1.2.0-dev***:
 
-- Python v2.7.3 including the packages:
-    - Setuptools v0.6c11, PIP v1.1
-    - NumPy v1.6.1, SciPy v0.10.1, Matplotlib v1.1.0, Pandas v0.7.3
-    - IPython v0.12 (incl. PyReadline v2.0-dev, pyzmq v2.1.11, Tornado 2.2)
-- Python IDE PyScripter v2.5.3
-- Enhanced command Console v2.0
+- PyScripter-v2.5.3.zip (Python IDE)
+- Console-2.00b148-Beta_32bit.zip (enhanced command console)
+- python-2.7.3.msi (32-bit)
+- *Python packages:*
+	- setuptools-0.6c11.win32-py2.7.exe
+	- pip-1.1-py2.7.egg
+	- numpy-1.6.1-py2.7-win32.egg
+	- scipy-0.10.1-win32-superpack-python2.7.exe
+	- matplotlib-1.1.0.win32-py2.7.exe
+	- pandas-0.7.3.win32-py2.7.exe	
+	- ipython-0.13.dev-py2.7.egg
+	- pyreadline-2.0-dev1.win32.exe
+	- pyzmq-2.1.11-py2.7-win32.egg
+	- tornado-2.2-py2.7.egg
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
 
-1. Download [WSPPDE v1.1.0](https://github.com/downloads/cwsoft/cwsoft-WSPPDE/cwsoft-WSPPDE-v1.1.0.exe) Windows installer
+1. Download latest [WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads) from GitHub
 2. Excecute the installer and unpack the files to the desired target directory
 
 ## Usage
@@ -31,17 +39,12 @@ The links below provide further information about the packages used in WSPPDE.
 
 - [PyScripter](http://code.google.com/p/pyscripter/)
 - [Console](http://sourceforge.net/projects/console/)
-
 - [Python](http://python.org), [Docu](http://docs.python.org/)
-	- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-	- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-	- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
-	- [Pandas](http://code.google.com/p/pandas/), [Docu](http://pandas.pydata.org/)
-	
-	- [IPython](http://ipython.org/), [Docu](http://ipython.org/ipython-doc/rel-0.12/index.html)
-		- [PyReadline](https://launchpad.net/pyreadline)
-		- [pyzmq](http://www.zeromq.org/bindings:python)
-		- [Tornado](http://www.tornadoweb.org/)
+- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
+- [Pandas](http://pypi.python.org/pypi/pandas), [Docu](http://code.google.com/p/pandas/)
+- [IPython](http://ipython.org/), [PyReadline](https://launchpad.net/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
 
 ## License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  

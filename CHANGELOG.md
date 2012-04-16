@@ -1,16 +1,31 @@
 # CHANGELOG
 
+***Legend:***
++ = Added
+- = Removed
+# = Bugfix
+! = Update/Change
+
+## v1.2.0-dev: April 16, 2012 (http://cwsoft.de)
++ ipython-0.13.dev-py2.7.egg
+- ipython-0.12.win32-setup.exe
+
 ## v1.1.0: April 14, 2012 (http://cwsoft.de)
-+ added CHANGELOG
-+ added Python Package [pandas 0.7.3](http://code.google.com/p/pandas/)
++ CHANGELOG.md
++ pandas-0.7.3.win32-py2.7.exe
 
 ## v1.0.0: April 13, 2012 (http://cwsoft.de)
-Initial release of WSPPDE:
+Initial release of WSPPDE including:
 
-- PyScripter 2.5.3 (Python IDE)
-- Console 2.0 (enhanced command console)
-- Python 2.7.3 (32-bit)
-- *Packages:*
-	- Setuptools 0.6c11, PIP 1.1
-	- NumPy 1.6.1, SciPy 0.10.1, Matplotlib 1.1.0
-	- IPython 0.12, PyReadline 2.0-dev, pyzmq 2.1.11, Tornado 2.2
+- PyScripter-v2.5.3.zip (Python IDE)
+- Console-2.00b148-Beta_32bit.zip (enhanced command console)
+- python-2.7.3.msi (32-bit)
+- setuptools-0.6c11.win32-py2.7.exe
+- pip-1.1-py2.7.egg
+- numpy-1.6.1-py2.7-win32.egg
+- scipy-0.10.1-win32-superpack-python2.7.exe
+- matplotlib-1.1.0.win32-py2.7.exe
+- ipython-0.12.win32-setup.exe
+- pyreadline-2.0-dev1.win32.exe
+- pyzmq-2.1.11-py2.7-win32.egg
+- tornado-2.2-py2.7.egg
