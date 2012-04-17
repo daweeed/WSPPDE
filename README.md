@@ -5,7 +5,7 @@ What WSPPDE is all about can best be seen from the screenshot below:
 
 ![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list]((https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package and a possible development version of the upcoming next version will be available in the [download section]([WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads).
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package and a possible development version of the upcoming next version will be available in the [download section](https://github.com/cwsoft/cwsoft-WSPPDE/downloads).
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
