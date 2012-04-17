@@ -1,25 +1,11 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console. Updates of installer packages are tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md).
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console.
 
-What `WSPPDE` is all about can best be seen from the screenshot below:
+What WSPPDE is all about can best be seen from the screenshot below:
+
 ![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-*The following third party components are included in WSPPDE:*
-
-- PyScripter-v2.5.3.zip (Python IDE)
-- Console-2.00b148-Beta_32bit.zip (enhanced command console)
-- python-2.7.3.msi (32-bit)
-- *Python packages:*
-	- setuptools-0.6c11.win32-py2.7.exe
-	- pip-1.1-py2.7.egg
-	- numpy-1.6.1-py2.7-win32.egg
-	- scipy-0.10.1-win32-superpack-python2.7.exe
-	- matplotlib-1.1.0.win32-py2.7.exe
-	- pandas-0.7.3.win32-py2.7.exe	
-	- ipython-0.12.win32-setup.exe
-	- pyreadline-2.0-dev1.win32.exe
-	- pyzmq-2.1.11-py2.7-win32.egg
-	- tornado-2.2-py2.7.egg
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list]((https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package and a possible development version of the upcoming next version will be available in the [download section]([WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads).
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.

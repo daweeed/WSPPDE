@@ -1,2 +1,5 @@
-import os
-os.chdir(".\Repository")
+try:
+	import os
+	os.chdir(".\Repository")
+except:
+	
