@@ -1,10 +1,10 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console. Changes are tracked via the [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md) file.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console. Updates of installer packages are tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md).
 
-What `WSPPDE` is all about can best be seen from the screenshot below (based on v1.1.0):
+What `WSPPDE` is all about can best be seen from the screenshot below:
 ![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-The following third party components are included in ***WSPPDE v1.2.0-dev***:
+*The following third party components are included in WSPPDE:*
 
 - PyScripter-v2.5.3.zip (Python IDE)
 - Console-2.00b148-Beta_32bit.zip (enhanced command console)
@@ -16,7 +16,7 @@ The following third party components are included in ***WSPPDE v1.2.0-dev***:
 	- scipy-0.10.1-win32-superpack-python2.7.exe
 	- matplotlib-1.1.0.win32-py2.7.exe
 	- pandas-0.7.3.win32-py2.7.exe	
-	- ipython-0.13.dev-py2.7.egg
+	- ipython-0.12.win32-setup.exe
 	- pyreadline-2.0-dev1.win32.exe
 	- pyzmq-2.1.11-py2.7-win32.egg
 	- tornado-2.2-py2.7.egg

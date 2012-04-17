@@ -7,15 +7,16 @@
 	# = Bugfix
 	! = Update/Change
 
-## v1.2.0-dev: April 16, 2012 (http://cwsoft.de)
-\+ ipython-0.13.dev-py2.7.egg
-\- ipython-0.12.win32-setup.exe
-
-## v1.1.0: April 14, 2012 (http://cwsoft.de)
-\+ CHANGELOG.md
+## v1.1.1: April 17, 2012
+\+ \Console\License.txt  
+\! CHANGELOG.md  
+\! README.md  
+	
+## v1.1.0: April 14, 2012
+\+ CHANGELOG.md  
 \+ pandas-0.7.3.win32-py2.7.exe
 
-## v1.0.0: April 13, 2012 (http://cwsoft.de)
+## v1.0.0: April 13, 2012
 Initial release of WSPPDE including:
 
 - PyScripter-v2.5.3.zip (Python IDE)
