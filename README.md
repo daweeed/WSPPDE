@@ -5,7 +5,7 @@ What WSPPDE is all about can best be seen from the screenshot below:
 
 ![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package and a possible development version of the upcoming next version will be available in the [download section](https://github.com/cwsoft/cwsoft-WSPPDE/downloads).
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package will be available in the [download section](https://github.com/cwsoft/cwsoft-WSPPDE/downloads). Optional a development version for an upcoming next WSPPD version may be provided.
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
@@ -14,11 +14,25 @@ WSPPDE is distributed as a self-extracting Windows installer build with the open
 2. Excecute the installer and unpack the files to the desired target directory
 
 ## Usage
-To start the integrated Python development environment, excecute `Python IDE.bat`. For help and first steps, view the PyScripter help file located in *\PyScripter\PyScripter.chm*.
+WSPPDE provides two convenient methods to start Python out of the box. 
 
-To start the enhanced command shell, excecute `Console.bat`. The Python interpreter and IPython can be invoked inside the console by typing the commands **python** or **ipython**. Alternatively one can use the shortcuts **CTRL+F2** (Python), **CTRL+F3** (IPython), **CTRL+F4** (IPython with Pylab), **CTRL+F5** (IPython Notebook) to start the applications inside the console.
+### Python IDE
+If you intent to write more than a few lines of Python code, you should use the Python IDE by excecuting `Python IDE.bat`. This fires up the PyScripter IDE, which provides code highlighting, code completion, debugging, integrated help and much more.
 
-***Tip:*** Your custom Python programs, modules or packages should be stored inside the WSPPDE *\Repository* folder. This folder is included by default in the Python search path, so files located here can be imported from the Python interpreter, IPython or the Python IDE.
+### Python command line
+If you just want to write a few lines of Python code or do some quick tests, open the enhanced Windows command line by excecuting `Console.bat`. To start the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html), enter **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python), **CTRL+F3** (IPython), **CTRL+F4** (IPython with Pylab), **CTRL+F5** (IPython Notebook) to run the application.
+
+To install additional Python packages from the [Python Package index](http://pypi.python.org/pypi), open the enhanced Windows command line by excecuting `Console.bat`. To install the Python package [pep8](http://pypi.python.org/pypi/pep8) for example, enter one of the following two commands (depending on your preferred setup tool) to the console.
+
+	pip install pep8
+	easy_install pep8
+
+To learn more about a setup tools, just enter the following to the console.
+
+	pip --help
+	easy_install --help
+	
+***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the PyScripter IDE.
 
 ## Documentation
 The links below provide further information about the packages used in WSPPDE.

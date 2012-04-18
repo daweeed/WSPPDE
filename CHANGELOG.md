@@ -1,6 +1,12 @@
 # WSPPDE CHANGELOG
 This files gives a brief overview of the released WSPPDE installation packages.
 
+**v1.2.0: April 18, 2012**
+
+- IPython and matplotlib configuration pathes set to local WSPPDE installation path
+- added LICENSE.md
+- updated README.md
+
 **v1.1.2: April 17, 2012**
 
 - fixed error message in PyScripter in case Repository folder does not exist
