@@ -1,4 +1,4 @@
-# List of Software/Packages distributed with WSPPDE v1.1.2
+# List of Software/Packages distributed with WSPPDE v1.2.0
 
 ## Third party software
 - PyScripter-v2.5.3.zip
