@@ -1,6 +1,11 @@
 # WSPPDE CHANGELOG
 This files gives a brief overview of the released WSPPDE installation packages.
 
+**2012-4: May 30, 2012**
+
+- changed version number system (year-release.fix)
+- updated packages: Numpy, Ipython and Tornado
+
 **v1.2.0: April 18, 2012**
 
 - IPython and matplotlib configuration pathes set to local WSPPDE installation path
