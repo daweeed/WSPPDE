@@ -1,5 +1,5 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages NumPy, SciPy, Matplotlib, Pandas, IPython) with a pre-configured Python IDE and an enhanced command console.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy, Statsmodels, wxPython) with a pre-configured Python IDE and an enhanced command console.
 
 What WSPPDE is all about can best be seen from the screenshot below:
 
@@ -34,17 +34,27 @@ To learn more about a setup tools, just enter the following to the console.
 	
 ***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the PyScripter IDE.
 
-## Documentation
-The links below provide further information about the packages used in WSPPDE.
+### Excecuting Python programs
+As WSPPDE is a portable Python version, the default Python filetypes (.py, pyw) are not associate with the Python interpreter by default.
+Of course you can always excecute Python programs from the enhanced command console or the IDE, but there is a more convenient way to do it.
+Just drag and drop a Python file (.py, pyw) on the `PyLauncher.bat` icon to execute it. 
 
-- [PyScripter](http://code.google.com/p/pyscripter/)
+By default packages located in the Python site-package folder or your local Repository folder are regognized and imported if required. In order to use Python files outside of these two pathes, add these pathes to the `Python27\WSPPDE.pth` file. If you want, create a shortcut of the `PyLauncher.bat` and store it e.g. at your Desktop and pimp it with a new icon.
+
+
+## Documentation
+The links below provide further information about the software packages distributed with WSPPDE.
+
 - [Console](http://sourceforge.net/projects/console/)
-- [Python](http://python.org), [Docu](http://docs.python.org/)
-- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
-- [Pandas](http://pypi.python.org/pypi/pandas), [Docu](http://code.google.com/p/pandas/)
 - [IPython](http://ipython.org/), [PyReadline](https://launchpad.net/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
+- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
+- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+- [Pandas](http://pypi.python.org/pypi/pandas), [Docu](http://code.google.com/p/pandas/)
+- [PyScripter](http://code.google.com/p/pyscripter/)
+- [Python](http://python.org), [Docu](http://docs.python.org/)
+- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
+- [Statsmodels](http://statsmodels.sourceforge.net/)
+- [wxPython](http://wxpython.org/)
 
 ## License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  

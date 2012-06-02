@@ -1,6 +1,11 @@
 # WSPPDE CHANGELOG
 This files gives a brief overview of the released WSPPDE installation packages.
 
+**2012-5: Jun 02, 2012**
+
+- added packages: statsmodles, wxPython
+- added "PyLauncher.bat" to excecute Python files (py, pyw) by dropping them on the icon
+
 **2012-4: May 30, 2012**
 
 - changed version number system (year-release.fix)
