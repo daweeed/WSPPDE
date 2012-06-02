@@ -27,12 +27,7 @@ To install additional Python packages from the [Python Package index](http://pyp
 	pip install pep8
 	easy_install pep8
 
-To learn more about a setup tools, just enter the following to the console.
-
-	pip --help
-	easy_install --help
-	
-***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the PyScripter IDE.
+***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the PyScripter IDE. Details about the setup tools are shown when starting the tools with the flag `--help`.
 
 ### Excecuting Python programs
 As WSPPDE is a portable Python version, the default Python filetypes (.py, pyw) are not associate with the Python interpreter by default.
@@ -41,19 +36,13 @@ Just drag and drop a Python file (.py, pyw) on the `PyLauncher.bat` icon to exec
 
 By default packages located in the Python site-package folder or your local Repository folder are regognized and imported if required. In order to use Python files outside of these two pathes, add these pathes to the `Python27\WSPPDE.pth` file. If you want, create a shortcut of the `PyLauncher.bat` and store it e.g. at your Desktop and pimp it with a new icon.
 
-
 ## Documentation
 The links below provide further information about the software packages distributed with WSPPDE.
 
-- [Console](http://sourceforge.net/projects/console/)
+- [Python](http://docs.python.org/), [PyScripter](http://code.google.com/p/pyscripter/), [Console](http://sourceforge.net/projects/console/)
 - [IPython](http://ipython.org/), [PyReadline](https://launchpad.net/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
-- [Matplotlib](http://matplotlib.sourceforge.net/), [Docu](http://matplotlib.sourceforge.net/contents.html)
-- [NumPy](http://numpy.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [Pandas](http://pypi.python.org/pypi/pandas), [Docu](http://code.google.com/p/pandas/)
-- [PyScripter](http://code.google.com/p/pyscripter/)
-- [Python](http://python.org), [Docu](http://docs.python.org/)
-- [SciPy](http://www.scipy.org/), [Docu](http://docs.scipy.org/doc/)
-- [Statsmodels](http://statsmodels.sourceforge.net/)
+- [Matplotlib](http://matplotlib.sourceforge.net/contents.html), [NumPy](http://docs.scipy.org/doc/), [SciPy](http://docs.scipy.org/doc/)
+- [Pandas](http://code.google.com/p/pandas/), [Statsmodels](http://statsmodels.sourceforge.net/)
 - [wxPython](http://wxpython.org/)
 
 ## License
