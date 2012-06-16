@@ -13,6 +13,9 @@ WSPPDE is distributed as a self-extracting Windows installer build with the open
 1. Download latest [WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads) from GitHub
 2. Excecute the installer and unpack the files to the desired target directory
 
+You can also download the latest version of WSPPDE from the software archive of the German computer magazine [c´t](http://www.heise.de/ct/), following the download link below. 
+<a title="WSPPDE, Download bei heise" href="http://www.heise.de/download/wsppde-1186495.html"><img alt="WSPPDE, Download bei heise" title="WSPPDE, Download bei heise" src="http://www.heise.de/software/icons/download_logo1.png" /></a>
+
 ## Usage
 WSPPDE provides two convenient methods to start Python out of the box. 
 
