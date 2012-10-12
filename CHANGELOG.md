@@ -1,6 +1,10 @@
 # WSPPDE CHANGELOG
 This files gives a brief overview of the released WSPPDE installation packages.
 
+**2012-7: Oct 12, 2012**
+
+- updated packages: Matplotlib, Pandas, Scipy, statsmodels, Tornado, pip, PyZMQ
+
 **2012-6: Jul 01, 2012**
 
 - updated packages: IPython, Pandas, PyZMQ, statsmodels, Tornado

@@ -1,16 +1,16 @@
-# WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy, Statsmodels, wxPython) with a pre-configured Python IDE and an enhanced command console.
+# cwsoft-WSPPDE - Windows&trade; Scientific Portable Python Development Environment
+`cwsoft-WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy, Statsmodels, wxPython) with a pre-configured Python IDE and an enhanced command console.
 
-What WSPPDE is all about can best be seen from the screenshot below:
+What cwsoft-WSPPDE is all about can best be seen from the screenshot below:
 
-![](https://github.com/cwsoft/cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
+![](https://github.com/cwsoft/python-cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package will be available in the [download section](https://github.com/cwsoft/cwsoft-WSPPDE/downloads). Optional a development version for an upcoming next WSPPD version may be provided.
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package will be available in the [download section](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads). Optional a development version for an upcoming next WSPPD version may be provided.
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
 
-1. Download latest [WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads) from GitHub
+1. Download latest [WSPPDE Windows installer](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads) from GitHub
 2. Excecute the installer and unpack the files to the desired target directory
 
 You can also download the latest version of WSPPDE from the software archive of the German computer magazine [c´t](http://www.heise.de/ct/), following the download link below. 
@@ -24,7 +24,7 @@ WSPPDE provides two convenient methods to start Python out of the box.
 If you intent to write more than a few lines of Python code, you should use the Python IDE by excecuting `Python IDE.bat`. This fires up the PyScripter IDE, which provides code highlighting, code completion, debugging, integrated help and much more.
 
 ### Python command line
-If you just want to write a few lines of Python code or do some quick tests, open the enhanced Windows command line by excecuting `Console.bat`. To start the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html), enter **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python), **CTRL+F3** (IPython), **CTRL+F4** (IPython with Pylab), **CTRL+F5** (IPython Notebook) to run the application.
+If you just want to type some Python code lines or do some quick tests, it´s best to open the enhanced Windows command line by excecuting `Console.bat`. To start the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html), enter **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python), **CTRL+F3** (IPython), **CTRL+F4** (IPython with Pylab), **CTRL+F5** (IPython Notebook) to run the application.
 
 To install additional Python packages from the [Python Package index](http://pypi.python.org/pypi), open the enhanced Windows command line by excecuting `Console.bat`. To install the Python package [pep8](http://pypi.python.org/pypi/pep8) for example, enter one of the following two commands (depending on your preferred setup tool) to the console.
 
