@@ -7,7 +7,7 @@
 
 ## Third party Python packages
 - [ipython-0.13.py2-win32.exe](http://pypi.python.org/pypi/ipython#downloads)
-- [matplotlib-1.1.0.win32-py2.7.exe](http://sourceforge.net/projects/matplotlib/files/matplotlib/)
+- [matplotlib-1.1.1.win32-py2.7.exe](http://sourceforge.net/projects/matplotlib/files/matplotlib/)
 - [numpy-1.6.2-win32-superpack-python2.7.exe](http://sourceforge.net/projects/numpy/files/NumPy/)
 - [pandas-0.9.0.win32-py2.7.exe](http://pypi.python.org/pypi/pandas#downloads)
 - [pip-1.2.1-py2.7.egg](http://pypi.python.org/pypi/pip)
