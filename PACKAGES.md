@@ -16,7 +16,7 @@
 - [scipy-0.11.0-win32-superpack-python2.7.exe](http://sourceforge.net/projects/scipy/files/scipy/)
 - [setuptools-0.6c11.win32-py2.7.exe](http://pypi.python.org/pypi/setuptools#files)
 - [statsmodels-0.4.3.win32-py2.7.exe](http://pypi.python.org/pypi/statsmodels)
-- [tornado-2.4-py2.7.egg-info](http://pypi.python.org/pypi/tornado/2.3)
+- [tornado-2.4-py2.7.egg-info](http://pypi.python.org/pypi/tornado/)
 - [wxPython2.8-win32-unicode-2.8.12.1-py27.exe](http://wxpython.org/download.php#stable)
 
 
