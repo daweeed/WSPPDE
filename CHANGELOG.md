@@ -1,6 +1,14 @@
 # WSPPDE CHANGELOG
 This files gives a brief overview of the released WSPPDE installation packages.
 
+**2012-8: Dec 02, 2012**
+
+- replaced IDE PyScripter by Spyder2
+- removed wxPython from default WSPPDE package (WSPPDE plugin available from GitHub download section)
+- moved 3rd party settings (ipython, matplotlib, spyder) into Settings folder
+- reworked and simplified all WSPPDE batch scripts
+- updated packages: IPython, Matplotlib, Pandas
+
 **2012-7: Oct 12, 2012**
 
 - updated packages: Matplotlib, Pandas, Scipy, statsmodels, Tornado, pip, PyZMQ

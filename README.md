@@ -1,5 +1,5 @@
 # cwsoft-WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`cwsoft-WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy, Statsmodels, wxPython) with a pre-configured Python IDE and an enhanced command console.
+`cwsoft-WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy, Statsmodels) with the pre-configured Spyder2 IDE and an enhanced command console.
 
 What cwsoft-WSPPDE is all about can best be seen from the screenshot below:
 
@@ -20,21 +20,21 @@ You can also download the latest version of WSPPDE from the software archive of 
 ## Usage
 WSPPDE provides two convenient methods to start Python out of the box. 
 
-### Python IDE
-If you intent to write more than a few lines of Python code, you should use the Python IDE by excecuting `Python IDE.bat`. This fires up the PyScripter IDE, which provides code highlighting, code completion, debugging, integrated help and much more.
+### Spyder IDE
+If you prefer to work with a powerfull integrated development environment (IDE), providing code highlighting and completion, debugging and an integrated help system, execute `Spyder-IDE.bat`. This fires up the open source Python IDE  [Spyder2](http://code.google.com/p/spyderlib/).
 
-### Python command line
-If you just want to type some Python code lines or do some quick tests, it´s best to open the enhanced Windows command line by excecuting `Console.bat`. To start the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html), enter **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python), **CTRL+F3** (IPython), **CTRL+F4** (IPython with Pylab), **CTRL+F5** (IPython Notebook) to run the application.
+### Python/IPython Console
+To install or update packages or write some quick tests, you may want to open the enhanced Windows command consolue by executing `Console.bat`. From here you can fire up the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html) by entering **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python console), **CTRL+F3** (IPython console), **CTRL+F4** (ipython --pylab), **CTRL+F5** (ipython notebook) to launch the python application.
 
 To install additional Python packages from the [Python Package index](http://pypi.python.org/pypi), open the enhanced Windows command line by excecuting `Console.bat`. To install the Python package [pep8](http://pypi.python.org/pypi/pep8) for example, enter one of the following two commands (depending on your preferred setup tool) to the console.
 
 	pip install pep8
 	easy_install pep8
 
-***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the PyScripter IDE. Details about the setup tools are shown when starting the tools with the flag `--help`.
+***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the Spyder IDE. Details about the setup tools are shown when starting the tools with the flag `--help`.
 
 ### Excecuting Python programs
-As WSPPDE is a portable Python version, the default Python filetypes (.py, pyw) are not associate with the Python interpreter by default.
+As WSPPDE is a portable Python version, the default Python filetypes (.py, pyw) are not associated with the Python interpreter by default.
 Of course you can always excecute Python programs from the enhanced command console or the IDE, but there is a more convenient way to do it.
 Just drag and drop a Python file (.py, pyw) on the `PyLauncher.bat` icon to execute it. 
 
@@ -47,7 +47,7 @@ The links below provide further information about the software packages distribu
 - [IPython](http://ipython.org/), [PyReadline](https://launchpad.net/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
 - [Matplotlib](http://matplotlib.sourceforge.net/contents.html), [NumPy](http://docs.scipy.org/doc/), [SciPy](http://docs.scipy.org/doc/)
 - [Pandas](http://code.google.com/p/pandas/), [Statsmodels](http://statsmodels.sourceforge.net/)
-- [wxPython](http://wxpython.org/)
+- [Spyder](http://packages.python.org/spyder/)
 
 ## License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  

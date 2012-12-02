@@ -1,15 +1,15 @@
-# List of Software/Packages distributed with WSPPDE 2012-7
+# List of Software/Packages distributed with WSPPDE 2012-8
 
 ## Third party software
 - [Console-2.00b148-Beta_32bit](http://sourceforge.net/projects/console/files/)
-- [PyScripter-v2.5.3.zip](http://code.google.com/p/pyscripter/downloads/list)
+- [spyder-2.1.11-py2.7.egg](http://code.google.com/p/spyderlib/)
 - [python-2.7.3.msi](http://python.org/download/)
 
 ## Third party Python packages
-- [ipython-0.13.py2-win32.exe](http://pypi.python.org/pypi/ipython#downloads)
-- [matplotlib-1.1.1.win32-py2.7.exe](http://sourceforge.net/projects/matplotlib/files/matplotlib/)
+- [ipython-0.13.1.py2-win32.exe](http://pypi.python.org/pypi/ipython#downloads)
+- [matplotlib-1.2.0.win32-py2.7.exe](http://sourceforge.net/projects/matplotlib/files/matplotlib/)
 - [numpy-1.6.2-win32-superpack-python2.7.exe](http://sourceforge.net/projects/numpy/files/NumPy/)
-- [pandas-0.9.0.win32-py2.7.exe](http://pypi.python.org/pypi/pandas#downloads)
+- [pandas-0.9.1.win32-py2.7.exe](http://pypi.python.org/pypi/pandas#downloads)
 - [pip-1.2.1-py2.7.egg](http://pypi.python.org/pypi/pip)
 - [pyreadline-2.0-dev1.win32.exe](https://launchpad.net/pyreadline/+download)
 - [pyzmq-2.2.0.1-py2.7-win32.egg](http://www.zeromq.org/bindings:python)
@@ -17,6 +17,12 @@
 - [setuptools-0.6c11.win32-py2.7.exe](http://pypi.python.org/pypi/setuptools#files)
 - [statsmodels-0.4.3.win32-py2.7.exe](http://pypi.python.org/pypi/statsmodels)
 - [tornado-2.4-py2.7.egg-info](http://pypi.python.org/pypi/tornado/)
-- [wxPython2.8-win32-unicode-2.8.12.1-py27.exe](http://wxpython.org/download.php#stable)
 
+## Optional Third party plugins available for WSPPDE
+The following WSPPDE plugins are available for integration:
 
+- [WSPPDE_wxPython2.8.12.1.7z](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads)
+   - [wxPython2.8-win32-unicode-2.8.12.1-py27.exe](http://wxpython.org/download.php#stable)
+   - [wxPython2.8-win32-docs-demos-2.8.12.1.exe](http://wxpython.org/download.php#stable)
+
+To integrate the plugin into WSPPDE, download it from GitHub, extract it with [7-zip](http://www.7-zip.org/) and copy the folders "Python27" and "Repository" to your WSPPDE installation.
