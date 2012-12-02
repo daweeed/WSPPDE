@@ -53,7 +53,7 @@ The links below provide further information about the software packages distribu
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  
 The third party program Console is released under [GNU General Public License](http://www.gnu.org/licenses/).
 
-    Copyright (c) 2012, cwsoft - http://cwsoft.de
+    Copyright (c) 2012-2013, cwsoft - http://cwsoft.de
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
