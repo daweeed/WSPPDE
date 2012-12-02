@@ -21,7 +21,7 @@
 ## Optional Third party plugins available for WSPPDE
 The following WSPPDE plugins are available for integration:
 
-- [WSPPDE_wxPython2.8.12.1.7z](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads)
+- [cwsoft-WSPPDE_Plugin_wxPython2.8.12.1.7z](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads)
    - [wxPython2.8-win32-unicode-2.8.12.1-py27.exe](http://wxpython.org/download.php#stable)
    - [wxPython2.8-win32-docs-demos-2.8.12.1.exe](http://wxpython.org/download.php#stable)
 
