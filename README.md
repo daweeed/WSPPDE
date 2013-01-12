@@ -5,7 +5,7 @@ What cwsoft-WSPPDE is all about can best be seen from the screenshot below:
 
 ![](https://github.com/cwsoft/python-cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/CHANGELOG.md). As GitHub has [dropped support for binary downloads](https://github.com/blog/1302-goodbye-uploads) in December 2012, the last stable WSPPDE installation are now provided via the [download portale](https://github.com/blog/1302-goodbye-uploads) of the German computer magazine c´t.
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/CHANGELOG.md). As GitHub has [dropped support for binary downloads](https://github.com/blog/1302-goodbye-uploads) in December 2012, the last stable WSPPDE installation are now provided via the [download portale](http://www.heise.de/download/wsppde-1186495.html) of the German computer magazine c´t.
 
 ## Installation
 WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and should work out of the box. The required installation steps are explained below.
