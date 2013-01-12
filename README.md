@@ -5,17 +5,16 @@ What cwsoft-WSPPDE is all about can best be seen from the screenshot below:
 
 ![](https://github.com/cwsoft/python-cwsoft-WSPPDE/raw/master/.screenshots/cwsoft-WSPPDE_screenshot.png)
 
-Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/CHANGELOG.md). Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package will be available in the [download section](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads). Optional a development version for an upcoming next WSPPD version may be provided.
+Details about the third party software and Python packages distributed with WSPPDE can be found in the [Package list](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/PACKAGES.md). The history of the released WSPPDE installer packages is tracked via [Changelog](https://github.com/cwsoft/python-cwsoft-WSPPDE/blob/master/CHANGELOG.md). As GitHub has [dropped support for binary downloads](https://github.com/blog/1302-goodbye-uploads) in December 2012, the last stable WSPPDE installation are now provided via the [download portale](https://github.com/blog/1302-goodbye-uploads) of the German computer magazine c´t.
 
 ## Installation
-WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and can be used out of the box. The required installation steps are explained below.
+WSPPDE is distributed as a self-extracting Windows installer build with the open source tool [NSIS](http://nsis.sourceforge.net/Main_Page). WSPPDE was tested on MS Windows XP (32-bit) and Windows 7 (64-bit) operating system and should work out of the box. The required installation steps are explained below.
 
-1. Download latest [WSPPDE Windows installer](https://github.com/cwsoft/python-cwsoft-WSPPDE/downloads) from GitHub
+1. Download the latest [WSPPDE installer](http://www.heise.de/download/wsppde-1186495.html) from the download portale of the German computer magazine c`t
+<a title="WSPPDE, Download bei heise" href="http://www.heise.de/download/wsppde-1186495.html"><img alt="WSPPDE, Download bei heise" title="WSPPDE, Download bei heise" src="http://www.heise.de/software/icons/download_logo1.png" /></a>
 2. Excecute the installer and unpack the files to the desired target directory
 
-You can also download the latest version of WSPPDE from the software archive of the German computer magazine [c´t](http://www.heise.de/ct/), following the download link below. 
-
-<a title="WSPPDE, Download bei heise" href="http://www.heise.de/download/wsppde-1186495.html"><img alt="WSPPDE, Download bei heise" title="WSPPDE, Download bei heise" src="http://www.heise.de/software/icons/download_logo1.png" /></a>
+Note: All Software hosted on the download portale of the German computer magazine [c´t](http://www.heise.de/ct/) is scanned by various virus engines before beeing published.
 
 ## Usage
 WSPPDE provides two convenient methods to start Python out of the box. 
