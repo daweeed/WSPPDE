@@ -1,4 +1,4 @@
-# List of Software/Packages distributed with WSPPDE 2013-1
+# Packages distributed with WSPPDE 2013-1
 
 ## Third party software
 - [Console-2.00b148-Beta_32bit](http://sourceforge.net/projects/console/files/)
@@ -16,19 +16,19 @@
 - [setuptools-0.6c11.win32-py2.7.exe](http://pypi.python.org/pypi/setuptools)
 
 ## Python packages from [PyPi](http://pypi.python.org/pypi)
-colorama==0.2.4
-docutils==0.10
-Jinja2==2.6
-logilab-astng==0.24.1
-logilab-common==0.59.0
-pep8==1.4.1
-pip==1.2.1
-pyflakes==0.6.1
-Pygments==1.6
-pylint==0.26.0
-pyreadline==1.7.1.dev-r0
-pyzmq==2.2.0.1
-rope==0.9.4
-Sphinx==1.1.3
-spyder==2.2.0beta1
-tornado==2.4.1
+- colorama==0.2.4
+- docutils==0.10
+- Jinja2==2.6
+- logilab-astng==0.24.1
+- logilab-common==0.59.0
+- pep8==1.4.1
+- pip==1.2.1
+- pyflakes==0.6.1
+- Pygments==1.6
+- pylint==0.26.0
+- pyreadline==1.7.1.dev-r0
+- pyzmq==2.2.0.1
+- rope==0.9.4
+- Sphinx==1.1.3
+- spyder==2.2.0beta1
+- tornado==2.4.1
