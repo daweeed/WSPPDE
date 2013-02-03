@@ -18,5 +18,7 @@ WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-li
     OF SUCH DAMAGE.
 
 ## Third party packages
-The third party program Console is released under [GNU General Public License](http://www.gnu.org/licenses/). 
-The license of the other third party packages distributed with WSPPDE can be found on the project pages referenced in section Documentation of the WSPPDE [README](https://github.com/cwsoft/cwsoft-WSPPDE/blob/master/README.md) file.
+Console and Wget are released under [GNU General Public License](http://www.gnu.org/licenses/).
+7-zip is released under a [GNU Lesser General Public License](http://www.7-zip.org/license.txt).
+
+The license of the other third party packages distributed with WSPPDE can be found on the project pages referenced in section Documentation of the WSPPDE [README](README.md) file.

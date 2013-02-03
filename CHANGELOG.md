@@ -1,5 +1,13 @@
 # WSPPDE CHANGELOG
-This files gives a brief overview of the released WSPPDE installation packages.
+Tracking changes applied for the WSPPDE releases.
+
+**2013-1: Feb 03, 2013**
+
+- renamed GitHub repository into WSPPDE
+- published WSPPDE build scripts at GitHub
+- unified batch scripts
+- removed package: wxPython, statsmodels
+- updated packages: docutils, pandas, pep8, pyreadline, spyder, tornado
 
 **2012-8: Dec 02, 2012**
 
@@ -48,5 +56,3 @@ This files gives a brief overview of the released WSPPDE installation packages.
 **v1.0.0: April 13, 2012**
 
 - initial release of WSPPDE including
-
-***NOTE:*** Due to GitHubs space limits for free accounts, only the last stable WSPPDE installation package and a possible development version of the upcoming next version is available in the [download section]([WSPPDE Windows installer](https://github.com/cwsoft/cwsoft-WSPPDE/downloads).

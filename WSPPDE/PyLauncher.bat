@@ -1,48 +1,32 @@
 @ECHO OFF
-ECHO **************************************************************************
+ECHO *****************************************************************************************
 ECHO * WSPPDE - Windows Scientific Portable Python Development Environment
-ECHO *
-ECHO * Script to execute Python (.py, pyw) files by dropping them on the
-ECHO * launcher icon of this batch script.
+ECHO * Launch script to execute Python (.py, pyw) files by dropping them on PyLauncher icon.
 ECHO *
 ECHO * @package     WSPPDE
 ECHO * @author      cwsoft (http://cwsoft.de)
 ECHO * @copyright   cwsoft
 ECHO * @license     http://www.opensource.org/licenses/bsd-license.php
-ECHO **************************************************************************
+ECHO *****************************************************************************************
+REM ## Include required scripts
+CALL %~dp0\Settings\environ.bat
 
-REM ## SET PATH TO ACTUAL BATCH FILE
-SET BATCH_PATH=%~dp0
-
-REM ## SET ENVIRONMENT VARIABLES USED IN .\Console\console.xml
-SET PYTHON="%BATCH_PATH%Python27\python.exe"
-SET IPYTHON="%BATCH_PATH%Python27\Scripts\ipython-script.py"
-SET PYLAB="%BATCH_PATH%Python27\Scripts\ipython-script.py" --pylab
-SET NOTEBOOK="%BATCH_PATH%Python27\Scripts\ipython-script.py" notebook --pylab inline
-SET STARTUP_PATH=%BATCH_PATH%Repository
-
-REM ## SET PATH FOR IPYTHON AND MATPLOTLIB CONFIGURATION FILES
-SET IPYTHONDIR=%BATCH_PATH%.ipython
-SET MPLCONFIGDIR=%BATCH_PATH%.matplotlib
-
-REM ## PREPEND PATH TO PYTHON INTERPRETER AND SCRIPT FOLDER TO THE SYSTEM PATH
-SET PATH=%BATCH_PATH%Python27;%BATCH_PATH%Python27\Scripts;%PATH%
-
-REM ## CHECK IF A FILE WITH SUPPORTED EXTENSION WAS DROPPED ON THE LAUNCHER
+REM ## Extract file extension of file dropped on the launcher icon
 SET FILE_EXTENSION=%~x1
 
-IF "%FILE_EXTENSION%" == ".pyw" GOTO :LAUNCH_WIN_APP
-IF "%FILE_EXTENSION%" == ".py" GOTO :LAUNCH_CON_APP
+IF "%FILE_EXTENSION%" == ".pyw" GOTO :PYW_APP
+IF "%FILE_EXTENSION%" == ".py" GOTO :PY_APP
 
-IF "%FILE_EXTENSION%" == "" ECHO To execute a Python file (*.py, *.pyw), just drop it on the launcher icon.
-IF NOT "%FILE_EXTENSION%" == "" ECHO Sorry, only Python files (*.py, *.pyw) can be executed by the launcher.
+ECHO.
+IF "%FILE_EXTENSION%" == "" ECHO USAGE: To execute a Python file (*.py, *.pyw), drop it on the PyLauncher icon.
+IF NOT "%FILE_EXTENSION%" == "" ECHO Sorry, only Python files (*.py, *.pyw) will be executed by the PyLauncher script.
 
 PAUSE
 EXIT
 
-:LAUNCH_WIN_APP
-START %BATCH_PATH%Python27\pythonw.exe "%1" %*
+:PYW_APP
+START %WSPPDE_PYTHON%\pythonw "%1" %*
 EXIT
 
-:LAUNCH_CON_APP
-START %BATCH_PATH%Console\Console.exe -r "/k %PYTHON% %1 %*"
+:PY_APP
+START %WSPPDE_ROOT%\Console\Console.exe -r "/k %WSPPDE_PYTHON%\python.exe %1 %*"
