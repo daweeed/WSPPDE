@@ -23,6 +23,8 @@ CALL %~dp0\environ.bat
 REM ## Clean up build system
 IF EXIST %WSPPDE_TMP% RD /S /Q %WSPPDE_TMP%
 MD %WSPPDE_TMP%
+IF EXIST %WSPPDE_PYTHON% RD /S /Q %WSPPDE_PYTHON%
+MD %WSPPDE_PYTHON%
 
 REM ## Integrate packages to WSPPDE
 ECHO ^>^> integrating python.msi ...

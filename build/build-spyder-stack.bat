@@ -29,7 +29,7 @@ ECHO ^>^> extracting pyside.exe ...
 %WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pyside.exe -o%WSPPDE_TMP% -y > NUL
 
 ECHO.
-ECHO ^>^> integrating pyside package ...
+ECHO ^>^> integrating pyside binary package ...
 XCOPY %WSPPDE_TMP%\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
 XCOPY %WSPPDE_TMP%\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
 
@@ -37,30 +37,22 @@ ECHO.
 ECHO ^>^> executing python pyside_postinstall.py --install ...
 %WSPPDE_PYTHON%\python %WSPPDE_PYTHON%\Scripts\pyside_postinstall.py -install
 
-REM ## Install additional spyder packages
+REM ## Install spyder packages using PIP
 ECHO.
-ECHO ^>^> executing pip install sphinx ...
-%WSPPDE_PYTHON%\Scripts\pip install sphinx %VERBOSITY%
+ECHO ^>^> excecuting pip install sphinx[docutils,Jinja2,Pygments]==1.1.3 ...
+%WSPPDE_PYTHON%\Scripts\pip install sphinx[docutils,Jinja2,Pygments]==1.1.3 %VERBOSITY%
 
 ECHO.
-ECHO ^>^> executing pip install spyder ...
-%WSPPDE_PYTHON%\Scripts\pip install spyder %VERBOSITY%
+ECHO ^>^> excecuting pip install spyder==2.2.0beta2 ...
+%WSPPDE_PYTHON%\Scripts\pip install spyder==2.2.0beta2 %VERBOSITY%
 
 ECHO.
-ECHO ^>^> excecuting pip install pyflakes ...
-%WSPPDE_PYTHON%\Scripts\pip install pyflakes %VERBOSITY% 
+ECHO ^>^> excecuting pip install pylint[colorama,logilab-astng,logilab-common]==0.26.0 ...
+%WSPPDE_PYTHON%\Scripts\pip install pylint[colorama,logilab-astng,logilab-common]==0.26.0 %VERBOSITY%
 
 ECHO.
-ECHO ^>^> excecuting pip install rope ...
-%WSPPDE_PYTHON%\Scripts\pip install rope %VERBOSITY%
-
-ECHO.
-ECHO ^>^> excecuting pip install pylint ...
-%WSPPDE_PYTHON%\Scripts\pip install pylint %VERBOSITY%
-
-ECHO.
-ECHO ^>^> excecuting pip install pep8 ...
-%WSPPDE_PYTHON%\Scripts\pip install pep8 %VERBOSITY% 
+ECHO ^>^> excecuting pip install pyflakes==0.6.1 rope==0.9.4 pep8==1.4.1 ...
+%WSPPDE_PYTHON%\Scripts\pip install pyflakes==0.6.1 rope==0.9.4 pep8==1.4.1 %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%

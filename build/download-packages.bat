@@ -20,8 +20,8 @@ REM ## Clean up download folder
 IF EXIST %WSPPDE_DOWNLOADS% RD /S /Q %WSPPDE_DOWNLOADS%
 MD %WSPPDE_DOWNLOADS%
 
-REM ## Download packages defined in "URLS-BINARY-PACKAGES.TXT"
-FOR /f "TOKENS=1,2 DELIMS=| " %%a IN (%~dp0\PYTHON-BINARY-PACKAGES.TXT) DO (
+REM ## Download packages defined in "BINARY-PACKAGES.TXT"
+FOR /f "TOKENS=1,2 DELIMS=| " %%a IN (%~dp0\BINARY-PACKAGES.TXT) DO (
 	ECHO ^>^> downloading binary package %%b ...
 	%WSPPDE_BIN%\wget --quiet --output-document=%WSPPDE_DOWNLOADS%\%%b %%a
 )

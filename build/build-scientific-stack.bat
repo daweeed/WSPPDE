@@ -1,4 +1,4 @@
- @ECHO OFF
+@ECHO OFF
 REM *****************************************************************************
 REM * WSPPDE - Windows Scientific Portable Python Development Environment
 REM * Integrates the scientific-stack consisting of Numpy, SciPy, Matplotlib,
@@ -43,25 +43,20 @@ ECHO ^>^> extracting pandas.exe ...
 %WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pandas.exe -o%WSPPDE_TMP%\SCIENTIFIC -y > NUL
 
 ECHO.
-ECHO ^>^> integrating scientific packages ...
+ECHO ^>^> integrating scientific binary packages ...
 XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
 XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
 XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
 
-REM ## Install IPython packages tornado, pyzmq
+REM ## Install pyzmq using easy_install
 ECHO.
-ECHO ^>^> excecuting pip install tornado ...
-%WSPPDE_PYTHON%\Scripts\pip install tornado %VERBOSITY%
+ECHO ^>^> excecuting easy_install pyzmq==2.2.0.1 ...
+%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq==2.2.0.1
 
+REM ## Install scientific packags using PIP
 ECHO.
-ECHO ^>^> excecuting pip install pyreadline ...
-REM %WSPPDE_PYTHON%\Scripts\easy_install.exe pyreadline
-%WSPPDE_PYTHON%\Scripts\pip install pyreadline %VERBOSITY%
-
-ECHO.
-ECHO ^>^> excecuting easy_install pyzmq ...
-REM %WSPPDE_PYTHON%\Scripts\easy_install.exe --quiet pyzmq
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq
+ECHO ^>^> excecuting pip install tornado==2.4.1 pyreadline==1.7.1 ...
+%WSPPDE_PYTHON%\Scripts\pip install tornado==2.4.1 pyreadline==1.7.1 %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%
