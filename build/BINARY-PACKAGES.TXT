@@ -1,8 +1,8 @@
-http://python.org/ftp/python/2.7.3/python-2.7.3.msi | python.msi
+http://www.python.org/ftp/python/2.7.4/python-2.7.4.msi | python.msi
 http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11.win32-py2.7.exe | easy_install.exe
-http://sourceforge.net/projects/numpy/files/NumPy/1.6.2/numpy-1.6.2-win32-superpack-python2.7.exe/download | numpy.exe
-http://sourceforge.net/projects/scipy/files/scipy/0.11.0/scipy-0.11.0-win32-superpack-python2.7.exe/download | scipy.exe
-http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.2.0/matplotlib-1.2.0.win32-py2.7.exe/download | matplotlib.exe
-http://pypi.python.org/packages/any/i/ipython/ipython-0.13.1.py2-win32-PROPER.exe | ipython.exe
+http://sourceforge.net/projects/numpy/files/NumPy/1.7.1/numpy-1.7.1-win32-superpack-python2.7.exe/download | numpy.exe
+http://sourceforge.net/projects/scipy/files/scipy/0.12.0/scipy-0.12.0-win32-superpack-python2.7.exe/download | scipy.exe
+http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.2.1/matplotlib-1.2.1.win32-py2.7.exe/download | matplotlib.exe
+http://pypi.python.org/packages/any/i/ipython/ipython-0.13.2.py2-win32.exe | ipython.exe
 http://pypi.python.org/packages/2.7/p/pandas/pandas-0.10.1.win32-py2.7.exe | pandas.exe
 http://releases.qt-project.org/pyside/PySide-1.1.2.win32-py2.7.exe | pyside.exe

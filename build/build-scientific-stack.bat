@@ -50,13 +50,13 @@ XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
 
 REM ## Install pyzmq using easy_install
 ECHO.
-ECHO ^>^> excecuting easy_install pyzmq==2.2.0.1 ...
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq==2.2.0.1
+ECHO ^>^> excecuting easy_install pyzmq==13.0.2 ...
+%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq==13.0.2
 
 REM ## Install scientific packags using PIP
 ECHO.
-ECHO ^>^> excecuting pip install tornado==2.4.1 pyreadline==1.7.1 ...
-%WSPPDE_PYTHON%\Scripts\pip install tornado==2.4.1 pyreadline==1.7.1 %VERBOSITY%
+ECHO ^>^> excecuting pip install tornado==3.0.1 pyreadline==2.0 ...
+%WSPPDE_PYTHON%\Scripts\pip install tornado==3.0.1 pyreadline==2.0 %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%

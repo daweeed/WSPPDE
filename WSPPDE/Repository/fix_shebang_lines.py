@@ -2,8 +2,8 @@
 '''
 #######################################################################################
 # Module: fix_shebang_lines
-# Removes path information from shebang lines to allow shifthin portable Python WSPPDE
-# installation to another location without running into issues.
+# Removes the path information to the Python interpreter from all shebang lines to
+# avoid possible issues when shifting WSPPDE to another location.
 #
 # @package:   WSPPDE
 # @author:    cwsoft (http://cwsoft.de)
@@ -14,13 +14,14 @@
 # NOTE: Used TABS for block indentation, so do not mess up with SPACES
 #######################################################################################
 '''
+import fileinput
 import glob
 import os
 import sys
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
-def fix_shebang_line(path, shebang_line="#! python.exe\n"):
+def update_shebang_lines(path, shebang_line="#! python.exe\n"):
     '''Updates shebang lines of all Python files located in path with given string'''
     python_files = glob.glob(path + "\*.py")
     if not python_files:
@@ -29,27 +30,20 @@ def fix_shebang_line(path, shebang_line="#! python.exe\n"):
 
     for python_file in python_files:    
         print "> processing: %r" % python_file
-        
-        with open(python_file, "r+") as file_handle:
-            data = file_handle.readlines()           
-            first_line = data[0]
-            if not (first_line.startswith("#!") and "python" in first_line):
-                print "  no shebang line found ... skipped\n"
-                continue
-            
-            data[0] = shebang_line
-            file_handle.seek(0)            
-            file_handle.writelines(data)
-            print "  shebang line replaced ...\n"    
-    
+
+        file_handle = fileinput.input(files=python_file, inplace=1)
+        for line in file_handle:
+            if line.startswith("#!") and "python" in line:
+                line = shebang_line
+            print line,
 
 if __name__ == "__main__":
-    # pathes to search
+    # search pathes to be scanned
     search_pathes = (
-        os.path.dirname(sys.executable) + "\Scripts",
-        os.path.dirname(sys.executable) + "\Lib\site-packages",
+        os.path.join(os.path.dirname(sys.executable), "Scripts"),
+        os.path.join(os.path.dirname(sys.executable), "Lib\site-packages"),
     )
     
     # fix shebang lines in all Python files located in search pathes    
     for search_path in search_pathes:
-        fix_shebang_line(search_path)
+        update_shebang_lines(search_path)

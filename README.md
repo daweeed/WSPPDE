@@ -1,5 +1,5 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.3  (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.4 (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
 
 What `WSPPDE` is all about can best be seen from the screenshot below:
 
@@ -14,7 +14,7 @@ WSPPDE is distributed as a self-extracting Windows installer build with the open
 <a title="WSPPDE, Download bei heise" href="http://www.heise.de/download/wsppde-1186495.html"><img alt="WSPPDE, Download bei heise" title="WSPPDE, Download bei heise" src="http://www.heise.de/software/icons/download_logo1.png" /></a>
 2. Excecute the installer and unpack the files to the desired target directory
 
-Note: All Software hosted on the download portale of the German computer magazine [c´t](http://www.heise.de/ct/) is scanned by various virus engines before beeing published.
+Note: All Software hosted on the download portale of the German computer magazine [c´t](http://www.heise.de/ct/) is scanned with multiple virus engines before beeing published.
 
 ## Usage
 WSPPDE provides two convenient methods to start Python out of the box. 
@@ -37,7 +37,7 @@ As WSPPDE is a portable Python version, the default Python filetypes (.py, pyw) 
 Of course you can always excecute Python programs from the enhanced command console or the IDE, but there is a more convenient way to do it.
 Just drag and drop a Python file (.py, pyw) on the `PyLauncher.bat` icon to execute it. 
 
-By default packages located in the Python site-package folder or your local Repository folder are regognized and imported if required. In order to use Python files outside of these two pathes, add these pathes to the `Python27\WSPPDE.pth` file. If you want, create a shortcut of the `PyLauncher.bat` and store it e.g. at your Desktop and pimp it with a new icon.
+By default packages located in the Python site-package folder or your local Repository folder are regognized and imported if required. In order to use Python files outside of these two pathes, add these pathes to the `Python\WSPPDE.pth` file. If you want, create a shortcut of the `PyLauncher.bat` and store it e.g. at your Desktop and pimp it with a new icon.
 
 ## Documentation
 The links below provide further information about the software packages distributed with WSPPDE.

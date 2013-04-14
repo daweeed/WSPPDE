@@ -1,6 +1,12 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2013-2: Apr 14, 2013**
+
+- updated Python to 2.7.4
+- updated all packages to the latest available version
+- fixed possible issue in "fix_shebang_lines.py"
+
 **2013-1: Feb 03, 2013**
 
 - renamed GitHub repository into WSPPDE
