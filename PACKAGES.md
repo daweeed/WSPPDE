@@ -1,4 +1,4 @@
-# Packages distributed with WSPPDE 2013-1
+# Packages distributed with WSPPDE 2013-2
 
 ## Third party software
 - [Console-2.00b148-Beta_32bit](http://sourceforge.net/projects/console/files/)
