@@ -1,6 +1,13 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2013-3: Jun 01, 2013**
+
+- updated Python to 2.7.5
+- updated all packages (except Spyder) to the latest available version
+- Spyder kept at 2.0.0rc (due to crash with stable version)
+- fixed build batch script to copy WSPPDE.pth file into Python folder
+
 **2013-2: Apr 14, 2013**
 
 - updated Python to 2.7.4

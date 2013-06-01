@@ -50,8 +50,8 @@ XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
 
 REM ## Install pyzmq using easy_install
 ECHO.
-ECHO ^>^> excecuting easy_install pyzmq==13.0.2 ...
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq==13.0.2
+ECHO ^>^> excecuting easy_install pyzmq==13.1.0 ...
+%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pyzmq==13.1.0
 
 REM ## Install scientific packags using PIP
 ECHO.

@@ -47,12 +47,12 @@ ECHO ^>^> excecuting pip install spyder==2.2.0rc ...
 %WSPPDE_PYTHON%\Scripts\pip install spyder==2.2.0rc %VERBOSITY%
 
 ECHO.
-ECHO ^>^> excecuting pip install pylint[colorama,logilab-astng,logilab-common]==0.27.0 ...
-%WSPPDE_PYTHON%\Scripts\pip install pylint[colorama,logilab-astng,logilab-common]==0.27.0 %VERBOSITY%
+ECHO ^>^> excecuting pip install pylint[colorama,logilab-astng,logilab-common]==0.28.0 ...
+%WSPPDE_PYTHON%\Scripts\pip install pylint[colorama,logilab-astng,logilab-common]==0.28.0 %VERBOSITY%
 
 ECHO.
-ECHO ^>^> excecuting pip install pyflakes==0.6.1 rope==0.9.4 pep8==1.4.5 ...
-%WSPPDE_PYTHON%\Scripts\pip install pyflakes==0.6.1 rope==0.9.4 pep8==1.4.5 %VERBOSITY%
+ECHO ^>^> excecuting pip install pyflakes==0.7.2 rope==0.9.4 pep8==1.4.5 ...
+%WSPPDE_PYTHON%\Scripts\pip install pyflakes==0.7.2 rope==0.9.4 pep8==1.4.5 %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%
