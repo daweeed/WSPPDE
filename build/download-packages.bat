@@ -1,7 +1,7 @@
 @ECHO OFF
 REM *****************************************************************************
 REM * WSPPDE - Windows Scientific Portable Python Development Environment
-REM * Script to download Windows binary files in "PYTHON-BINARY-PACKAGES.TXT"
+REM * Script to download Windows binary files in "BINARY-PACKAGES.TXT"
 REM *
 REM * @package     WSPPDE
 REM * @author      cwsoft (http://cwsoft.de)
@@ -23,7 +23,7 @@ MD %WSPPDE_DOWNLOADS%
 REM ## Download packages defined in "BINARY-PACKAGES.TXT"
 FOR /f "TOKENS=1,2 DELIMS=| " %%a IN (%~dp0\BINARY-PACKAGES.TXT) DO (
 	ECHO ^>^> downloading binary package %%b ...
-	%WSPPDE_BIN%\wget --quiet --output-document=%WSPPDE_DOWNLOADS%\%%b %%a
+	%WSPPDE_BIN%\wget --no-check-certificate --quiet --output-document=%WSPPDE_DOWNLOADS%\%%b %%a
 )
 
 ECHO.
