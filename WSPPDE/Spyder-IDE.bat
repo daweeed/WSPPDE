@@ -12,4 +12,4 @@ REM ## Include required scripts
 CALL %~dp0\Settings\environ.bat
 
 REM ## Launch spyder2 IDE
-START /B %WSPPDE_PYTHON%\pythonw %WSPPDE_PYTHON%\Scripts\spyder --workdir=%WSPPDE_REPOSITORY%
+START %WSPPDE_PYTHON%\pythonw.exe %WSPPDE_PYTHON%\Scripts\spyder --workdir=%WSPPDE_REPOSITORY%

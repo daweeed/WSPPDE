@@ -1,6 +1,11 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2013-4: Sep 16, 2013**
+
+- updated wget to deal with https protocol
+- updated all packages to the latest available version
+
 **2013-3: Jun 01, 2013**
 
 - updated Python to 2.7.5

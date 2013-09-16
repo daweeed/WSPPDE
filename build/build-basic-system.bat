@@ -14,7 +14,7 @@ SET VERBOSITY=--quiet
 
 ECHO.
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ECHO + BUILDING WSPPDE BASIC SYSTEM (PYTHON, EASY_INSTALL, PIP, CONSOLE)
+ECHO + BUILDING WSPPDE BASIC SYSTEM (PYTHON, SETUPTOOLS, PIP, CONSOLE)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 REM ## Include required scripts
@@ -31,11 +31,12 @@ REM ## Integrate packages to WSPPDE
 ECHO ^>^> integrating python.msi ...
 msiexec /a %WSPPDE_DOWNLOADS%\python.msi /qb TARGETDIR=%WSPPDE_PYTHON%
 
+REM ## Install Python installer pip
+CD %WSPPDE_DOWNLOADS%
 ECHO.
-ECHO ^>^> integrating easy_install.exe ...
-%WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\easy_install.exe -o%WSPPDE_TMP%\EASYINSTALL -y > NUL
-XCOPY %WSPPDE_TMP%\EASYINSTALL\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
-XCOPY %WSPPDE_TMP%\EASYINSTALL\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
+ECHO ^>^> installing setuptools ...
+%WSPPDE_PYTHON%\python.exe %WSPPDE_DOWNLOADS%\ez_setup.py > NUL
+CD %WSPPDE_ROOT%
 
 REM ## Install Python installer pip
 ECHO.
