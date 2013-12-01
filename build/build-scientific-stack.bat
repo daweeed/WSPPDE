@@ -41,19 +41,19 @@ ECHO ^>^> extracting pandas.exe ...
 
 ECHO.
 ECHO ^>^> integrating scientific binary packages ...
-XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
-XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
-XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PLATLIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PURELIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
 
 REM ## Install ipython and pyzmq using easy_install
 ECHO.
-ECHO ^>^> excecuting easy_install ipython==1.1.0 pyzmq==13.1.0 ...
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% ipython==1.1.0 pyzmq==13.1.0
+ECHO ^>^> excecuting easy_install ipython==1.1.0 pyzmq==14.0.1 ...
+%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% ipython==1.1.0 pyzmq==14.0.1
 
 REM ## Install scientific packages using PIP
 ECHO.
-ECHO ^>^> excecuting pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.1 pyparsing==2.0.1 ...
-%WSPPDE_PYTHON%\Scripts\pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.1 pyparsing==2.0.1 %VERBOSITY%
+ECHO ^>^> excecuting pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.2 pyparsing==2.0.1 ...
+%WSPPDE_PYTHON%\Scripts\pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.2 pyparsing==2.0.1 %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%

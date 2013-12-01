@@ -1,7 +1,7 @@
 # License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  
 
-    Copyright (c) 2012-2013, cwsoft - http://cwsoft.de
+    Copyright (c) 2012-2014, cwsoft - http://cwsoft.de
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:

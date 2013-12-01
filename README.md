@@ -1,5 +1,5 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.5 (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.6 (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
 
 What `WSPPDE` is all about can best be seen from the screenshot below (older screenshot based on WSPPDE-2013-1):
 
@@ -25,10 +25,9 @@ If you prefer to work with a powerfull integrated development environment (IDE),
 ### Python/IPython Console
 To install or update packages or write some quick tests, you may want to open the enhanced Windows command consolue by executing `Console.bat`. From here you can fire up the enhanced interactive Python shell [IPython](http://ipython.org/ipython-doc/stable/overview.html) by entering **ipython** to the console window. If you (for whatever reason) prefer the puristic Python standard shell, enter **python** instead. Alternatively you can use the shortcuts **CTRL+F2** (Python console), **CTRL+F3** (IPython console), **CTRL+F4** (ipython --pylab), **CTRL+F5** (ipython notebook) to launch the python application.
 
-To install additional Python packages from the [Python Package index](http://pypi.python.org/pypi), open the enhanced Windows command line by excecuting `Console.bat`. To install the Python package [pep8](http://pypi.python.org/pypi/pep8) for example, enter one of the following two commands (depending on your preferred setup tool) to the console.
+To install additional Python packages from the [Python Package index](https://pypi.python.org/pypi), open the enhanced Windows command line by excecuting `Console.bat`. To install the Python package [requests](https://pypi.python.org/pypi/requests) for example, enter the following command to the console.
 
-	pip install pep8
-	easy_install pep8
+	pip install requests
 
 ***Tip:*** Store your Python programs, modules or packages inside the WSPPDE folder *\Repository*. This folder is included to the Python search path, so files located here can be imported from the Python interpreter, IPython or the Spyder IDE. Details about the setup tools are shown when starting the tools with the flag `--help`.
 
