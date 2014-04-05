@@ -13,6 +13,7 @@ REM Verbosity of easy_install and pip (--quiet, --verbose)
 SET VERBOSITY=--quiet
 
 ECHO.
+ECHO.
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ECHO + BUILDING WSPPDE SCIENTIFIC STACK (NUMPY, SCIPY, MATPLOTLIB, IPYTHON)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -39,21 +40,14 @@ ECHO ^>^> extracting matplotlib.exe ...
 ECHO ^>^> extracting pandas.exe ...
 %WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pandas.exe -o%WSPPDE_TMP%\SCIENTIFIC -y > NUL
 
-ECHO.
 ECHO ^>^> integrating scientific binary packages ...
-IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PLATLIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
-IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PURELIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y
-IF EXIST %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PLATLIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y > NUL
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PURELIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y > NUL
+IF EXIST %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y > NUL
 
-REM ## Install ipython and pyzmq using easy_install
-ECHO.
-ECHO ^>^> excecuting easy_install ipython==1.1.0 pyzmq==14.0.1 ...
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% ipython==1.1.0 pyzmq==14.0.1
-
-REM ## Install scientific packages using PIP
-ECHO.
-ECHO ^>^> excecuting pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.2 pyparsing==2.0.1 ...
-%WSPPDE_PYTHON%\Scripts\pip install tornado==3.1.1 pyreadline==2.0 python_dateutil==2.2 pyparsing==2.0.1 %VERBOSITY%
+REM ## Install scientific packages using PIP defined in PACKAGES-PIP-SCIENTIFIC.txt
+ECHO ^>^> executing pip install --requirement PACKAGES-PIP-SCIENTIFIC.TXT %VERBOSITY% ...
+%WSPPDE_PYTHON%\Scripts\pip install --requirement %WSPPDE_BUILD%\PACKAGES-PIP-SCIENTIFIC.TXT %VERBOSITY%
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%

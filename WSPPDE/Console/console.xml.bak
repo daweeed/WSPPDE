@@ -90,7 +90,7 @@
 		</actions>
 	</mouse>
 	<tabs>
-		<tab title="Console" use_default_icon="0">
+		<tab title="MS Bash" use_default_icon="0">
 			<console shell="" init_dir="" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
@@ -99,7 +99,7 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Python Console" use_default_icon="0">
+		<tab title="Python" use_default_icon="0">
 			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
@@ -108,8 +108,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="IPython Console" use_default_icon="0">
-			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython-script.py&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
+		<tab title="IPython" use_default_icon="0">
+			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython.exe --matplotlib&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -117,17 +117,8 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="IPython --pylab" use_default_icon="0">
-			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython-script.py --pylab&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="IPython Notebook" use_default_icon="0">
-			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython-script.py notebook --pylab inline&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
+		<tab title="Notebook" use_default_icon="0">
+			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython.exe notebook --matplotlib=inline&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">

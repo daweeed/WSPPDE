@@ -24,5 +24,5 @@ SET HOME=%WSPPDE_ROOT%\Settings
 SET IPYTHONDIR=%HOME%\.ipython
 SET MPLCONFIGDIR=%HOME%\.matplotlib
 
-REM ## Append WSPPDE pathes to Windows path variable
-SET PATH=%PATH%;%WSPPDE_PYTHON%;%WSPPDE_PYTHON%\Lib\site-packages;%WSPPDE_PYTHON%\Scripts;%WSPPDE_REPOSITORY%;
+REM ## Preppend WSPPDE pathes to Windows PATH variable
+SET PATH=%WSPPDE_PYTHON%;%WSPPDE_PYTHON%\Lib\site-packages;%WSPPDE_PYTHON%\Scripts;%WSPPDE_REPOSITORY%;%PATH%

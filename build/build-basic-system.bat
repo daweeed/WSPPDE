@@ -2,7 +2,7 @@
 REM *****************************************************************************
 REM * WSPPDE - Windows Scientific Portable Python Development Environment
 REM * Builds WSPPDE base-setup consisting of a portable Python installation 
-REM * including setuptools, pip and the enhanced console from scratch.
+REM * including package tool pip and the enhanced console from scratch.
 REM *
 REM * @package     WSPPDE
 REM * @author      cwsoft (http://cwsoft.de)
@@ -13,10 +13,10 @@ REM Verbosity of easy_install and pip (--quiet, --verbose)
 SET VERBOSITY=--quiet
 
 ECHO.
+ECHO.
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ECHO + BUILDING WSPPDE BASIC SYSTEM (PYTHON, SETUPTOOLS, PIP, CONSOLE)
+ECHO + BUILDING WSPPDE BASIC SYSTEM (PYTHON, PIP, ENHANCED CONSOLE)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 REM ## Include required scripts
 CALL %~dp0\environ.bat
 
@@ -25,23 +25,15 @@ IF EXIST %WSPPDE_TMP% RD /S /Q %WSPPDE_TMP%
 MD %WSPPDE_TMP%
 IF EXIST %WSPPDE_PYTHON% RD /S /Q %WSPPDE_PYTHON%
 MD %WSPPDE_PYTHON%
-COPY %WSPPDE_BUILD%\WSPPDE.pth %WSPPDE_PYTHON%
+COPY %WSPPDE_BUILD%\WSPPDE.pth %WSPPDE_PYTHON% > NUL
 
 REM ## Integrate packages to WSPPDE
 ECHO ^>^> integrating python.msi ...
 msiexec /a %WSPPDE_DOWNLOADS%\python.msi /qb TARGETDIR=%WSPPDE_PYTHON%
 
-REM ## Install Python installer pip
-CD %WSPPDE_DOWNLOADS%
-ECHO.
-ECHO ^>^> installing setuptools ...
-%WSPPDE_PYTHON%\python.exe %WSPPDE_DOWNLOADS%\ez_setup.py > NUL
-CD %WSPPDE_ROOT%
-
-REM ## Install Python installer pip
-ECHO.
-ECHO ^>^> executing easy_install pip ...
-%WSPPDE_PYTHON%\Scripts\easy_install %VERBOSITY% pip
+REM ## Install Python packaging tool pip
+ECHO ^>^> executing python get-pip.py ...
+%WSPPDE_PYTHON%\python.exe %WSPPDE_DOWNLOADS%\get-pip.py > NUL
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%

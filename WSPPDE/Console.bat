@@ -11,5 +11,5 @@ REM **************************************************************************
 REM ## Set required environment variables
 CALL %~dp0\Settings\environ.bat
 
-REM ## Fire up the enhanced Windows console
-START %WSPPDE_ROOT%\Console\Console.exe
+REM ## Fire up the enhanced Windows console using tab MS Bash as default
+START %WSPPDE_ROOT%\Console\Console.exe -t "MS Bash"
