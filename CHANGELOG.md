@@ -1,6 +1,13 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2014-1: Apr 06, 2014**
+
+- updated make scripts
+- replaced ez_setup.py with get-pip.py
+- updated all packages to the latest available version
+
+
 **2013-5: Dec 01, 2013**
 
 - updated Python to 2.7.6
