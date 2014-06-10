@@ -9,7 +9,7 @@ ECHO * @copyright   cwsoft
 ECHO * @license     http://www.opensource.org/licenses/bsd-license.php
 ECHO *****************************************************************************************
 REM ## Include required scripts
-CALL %~dp0\Settings\environ.bat
+CALL %~dps0\Settings\environ.bat
 
 REM ## Extract file extension of file dropped on the launcher icon
 SET FILE_EXTENSION=%~x1

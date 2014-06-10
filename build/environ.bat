@@ -10,7 +10,7 @@ REM * @license     http://www.opensource.org/licenses/bsd-license.php
 REM *****************************************************************************
 REM ## Work out absolute root path to WSPPDE
 SET CWD=%CD%
-CHDIR %~dp0..
+CHDIR %~dps0..
 SET WSPPDE_ROOT=%CD%
 CHDIR %CWD%
 

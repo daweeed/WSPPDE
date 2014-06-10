@@ -14,7 +14,7 @@ ECHO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ECHO + FINALIZE WSPPDE INSTALLATION (FIX SHEBANG LINES, PRE-COMPILE *.PY FILES)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 REM ## Include required scripts
-CALL %~dp0\environ.bat
+CALL %~dps0\environ.bat
 
 ECHO ^>^> executing python wsppde.py
 ECHO.

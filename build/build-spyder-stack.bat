@@ -19,7 +19,7 @@ ECHO + BUILD WSPPDE SPYDER-STACK (SPYDER, SPHINX, PYFLAKES, ROPE, PYLINT, PEP8)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 REM ## Include required scripts
-CALL %~dp0\environ.bat
+CALL %~dps0\environ.bat
 
 REM ## Clean up build system
 IF EXIST %WSPPDE_TMP% RD /S /Q %WSPPDE_TMP%

@@ -9,19 +9,19 @@ ECHO * @copyright   cwsoft
 ECHO * @license     http://www.opensource.org/licenses/bsd-license.php
 ECHO ****************************************************************************
 REM ## Download required WSPPDE binary packages
-CALL %~dp0\build\download-binary-packages.bat
+CALL %~dps0\build\download-binary-packages.bat
 
 REM ## Build WSPPDE basic system: Python, easy install, pip, enhanced console
-CALL %~dp0\build\build-basic-system.bat
+CALL %~dps0\build\build-basic-system.bat
 
 REM ## Build WSPPDE scientific system: IPython, NumPy, SciPy, Pandas, Spyder IDE
-CALL %~dp0\build\build-scientific-stack.bat
+CALL %~dps0\build\build-scientific-stack.bat
 
 REM ## Build WSPPDE spyder-setup: sypder, sphinx, pyflakes, pylint, pep8
-CALL %~dp0\build\build-spyder-stack.bat
+CALL %~dps0\build\build-spyder-stack.bat
 
 REM ## Execute WSPPDE wrap up script
-CALL %~dp0\build\build-wrap-up.bat
+CALL %~dps0\build\build-wrap-up.bat
 
 ECHO.
 ECHO.

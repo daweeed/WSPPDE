@@ -14,7 +14,7 @@ ECHO + DOWNLOADING REQUIRED PYTHON BINARY PACKAGES
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 REM ## Include required scripts
-CALL %~dp0\environ.bat
+CALL %~dps0\environ.bat
 
 REM ## Clean up download folder
 IF EXIST %WSPPDE_DOWNLOADS% RD /S /Q %WSPPDE_DOWNLOADS%
