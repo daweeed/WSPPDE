@@ -20,14 +20,8 @@ CALL %~dp0\build\build-scientific-stack.bat
 REM ## Build WSPPDE spyder-setup: sypder, sphinx, pyflakes, pylint, pep8
 CALL %~dp0\build\build-spyder-stack.bat
 
-REM ## fix shebang lines of *.py and *.exe files located in Python\Scripts
-ECHO.
-ECHO.
-ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ECHO + FIXING SHEBANG LINES OF *.PY AND *.EXE FILES LOCATED IN PYTHON\SCRIPTS
-ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ECHO ^>^> executing python fix_shebang_lines.py
-%~dp0\WSPPDE\Python\python.exe %~dp0\WSPPDE\Repository\fix_shebang_lines.py
+REM ## Execute WSPPDE wrap up script
+CALL %~dp0\build\build-wrap-up.bat
 
 ECHO.
 ECHO.

@@ -25,17 +25,6 @@ REM ## Clean up build system
 IF EXIST %WSPPDE_TMP% RD /S /Q %WSPPDE_TMP%
 MD %WSPPDE_TMP%
 
-REM ## Integrate pyside package to WSPPDE
-ECHO ^>^> extracting pyside.exe ...
-%WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pyside.exe -o%WSPPDE_TMP% -y > NUL
-
-ECHO ^>^> integrating pyside binary package ...
-XCOPY %WSPPDE_TMP%\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y > NUL
-XCOPY %WSPPDE_TMP%\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y > NUL
-
-ECHO ^>^> executing python pyside_postinstall.py --install ...
-%WSPPDE_PYTHON%\python %WSPPDE_PYTHON%\Scripts\pyside_postinstall.py -install > NUL
-
 REM ## Install spyder packages using PIP defined in PACKAGES-PIP-SPYDER.TXT
 ECHO ^>^> executing pip install --requirement PACKAGES-PIP-SPYDER.TXT %VERBOSITY% ...
 %WSPPDE_PYTHON%\Scripts\pip install --requirement %WSPPDE_BUILD%\PACKAGES-PIP-SPYDER.TXT %VERBOSITY%

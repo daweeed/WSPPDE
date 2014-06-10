@@ -9,9 +9,6 @@ REM * @author      cwsoft (http://cwsoft.de)
 REM * @copyright   cwsoft
 REM * @license     http://www.opensource.org/licenses/bsd-license.php
 REM *****************************************************************************
-REM Verbosity of easy_install and pip (--quiet, --verbose)
-SET VERBOSITY=--quiet
-
 ECHO.
 ECHO.
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
