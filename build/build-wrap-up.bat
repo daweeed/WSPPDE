@@ -16,18 +16,9 @@ ECHO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 REM ## Include required scripts
 CALL %~dp0\environ.bat
 
-REM ## Remove path from shebang lines of files inside WSPPDE\Python\Scripts
-ECHO ^>^> executing python fix_shebang_lines.py
-%WSPPDE_PYTHON%\python.exe %WSPPDE_PATH%\Repository\fix_shebang_lines.py
-
-REM ## Optionally compile Python files *.py into byte code *.pyc
+ECHO ^>^> executing python wsppde.py
 ECHO.
-ECHO.
-SET /p answer=^>^> Recursively compile *.py files in WSPPDE\Python\Lib into byte code (Y/N)?: 
-IF /i "%answer:~,1%" EQU "Y" (
-    ECHO ^>^> executing python -m compileall WSPPDE\Python\Lib
-	%WSPPDE_PYTHON%\python.exe -m compileall %WSPPDE_PYTHON%\Lib
-)
+%WSPPDE_PYTHON%\python.exe %WSPPDE_PATH%\Repository\wsppde.py
 
 ECHO.
 ECHO ^>^> WSPPDE wrap up completed !!!
