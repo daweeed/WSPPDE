@@ -11,7 +11,7 @@ REM **************************************************************************
 
 REM ## Work out absolute root path to WSPPDE
 SET CWD=%CD%
-CHDIR %~dps0..
+CHDIR %~dp0..
 SET WSPPDE_ROOT=%CD%
 CHDIR %CWD%
 
