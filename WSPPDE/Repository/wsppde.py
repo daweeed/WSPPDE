@@ -3,8 +3,8 @@
 #######################################################################################
 # Module: wsppde
 # Contains utility functions automatically executed after the WSPPDE installation.
-# Removes the Python interpreter path from shebang lines of all *.py, *.exe files in
-# the WSPPDE\Python\Scripts folder. Execute this script after installation of 3rd party 
+# Removes the Python interpreter path from shebang lines of all files inside the
+# WSPPDE\Python\Scripts folder. Execute this script after installation of 3rd party 
 # packages via PIP to ensure it's portability. Optionally allows to recursively compile
 # all *.py files inside WSPPDE\Python\Lib to byte code for initial speed up.
 #
@@ -21,7 +21,7 @@ import os
 import re
 import sys
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 
 class WSPPDE(object):
@@ -38,7 +38,7 @@ class WSPPDE(object):
 
     def remove_shebang_pathes(self, quiet=True):
         '''
-        Removes path information from all *.py and *.exe files defined in self.shebang_pathes
+        Removes path information from all files defined in self.shebang_pathes
         '''
         for search_path in self.shebang_pathes:
             self._remove_shebang_pathes(search_path, quiet=quiet)
@@ -57,9 +57,8 @@ class WSPPDE(object):
         # regulare expression to detect shebang line with path information
         reobj = re.compile(r"#!(.+)python\.exe")
         
-        # list of all files matching *.py or *.exe in given path
-        filenames = glob.glob(search_path + r"\*.py")
-        filenames = filenames + glob.glob(search_path + r"\*.exe")
+        # list of all files inside given path
+        filenames = glob.glob(search_path + r"\*")
         
         scanned_files, wrong_files, fixed_files = 0, 0, 0
         for filename in filenames:
