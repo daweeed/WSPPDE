@@ -25,8 +25,8 @@ PAUSE
 EXIT
 
 :PYW_APP
-START %WSPPDE_PYTHON%\pythonw "%1" %*
+START "Pythonw" %WSPPDE_PYTHON%\pythonw.exe %~fs1 %*
 EXIT
 
 :PY_APP
-START %WSPPDE_ROOT%\Console\Console.exe -r "/k %WSPPDE_PYTHON%\python.exe %1 %*"
+START "Python" %WSPPDE_ROOT%\Console\Console.exe -w "Console" -r "/k %WSPPDE_PYTHON%\python.exe %~fs1 %*"
