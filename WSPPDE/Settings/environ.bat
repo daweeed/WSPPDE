@@ -18,6 +18,7 @@ CHDIR %CWD%
 REM ## Set WSPPDE variables
 SET WSPPDE_PYTHON=%WSPPDE_ROOT%\Python
 SET WSPPDE_REPOSITORY=%WSPPDE_ROOT%\Repository
+SET WSPPDE_NOTEBOOKS=%WSPPDE_REPOSITORY%\Notebooks
 
 REM ## Set configuration directories for 3rd party packages spyder2, ipython, matploblib
 SET HOME=%WSPPDE_ROOT%\Settings
