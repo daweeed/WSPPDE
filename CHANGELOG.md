@@ -1,12 +1,20 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2014-2: Jun 10, 2014**
+
+- reworked build scripts
+- moved fix_shebang_lines module to wsppde
+- added IPython configuration files and Notebook folder
+- updated Python to 2.7.7
+- updated IPython to 2.1.0
+- updated all packages to the latest available version
+
 **2014-1: Apr 06, 2014**
 
 - updated make scripts
 - replaced ez_setup.py with get-pip.py
 - updated all packages to the latest available version
-
 
 **2013-5: Dec 01, 2013**
 

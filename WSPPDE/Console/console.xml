@@ -99,6 +99,17 @@
 				</image>
 			</background>
 		</tab>
+		<!-- remove multiline comment to add Git Bash tab (read "WSPPDE\Repository\Notebooks\01 Configuration.ipynb" for details)
+		<tab title="Git Bash" use_default_icon="0">
+			<console shell="%WSPPDE_ROOT%\git\git-bash.bat" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		-->
 		<tab title="Python" use_default_icon="0">
 			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
@@ -109,7 +120,7 @@
 			</background>
 		</tab>
 		<tab title="IPython" use_default_icon="0">
-			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython.exe&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
+			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\Scripts\ipython.exe&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -118,7 +129,7 @@
 			</background>
 		</tab>
 		<tab title="Notebook" use_default_icon="0">
-			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\python.exe %WSPPDE_PYTHON%\Scripts\ipython.exe notebook&quot;" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
+			<console shell="cmd.exe /k &quot;%WSPPDE_PYTHON%\Scripts\ipython.exe&quot; notebook" init_dir="%WSPPDE_REPOSITORY%" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">

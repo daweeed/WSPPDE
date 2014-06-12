@@ -611,6 +611,7 @@ c.NotebookApp.notebook_dir = u'%s' % os.environ["WSPPDE_NOTEBOOKS"]
 # 
 # By default, it is notebook-dir/.ipynb_checkpoints
 # c.FileNotebookManager.checkpoint_dir = u''
+c.FileNotebookManager.checkpoint_dir = c.NotebookApp.notebook_dir + "/.ipynb_checkpoints"
 
 # Glob patterns to hide in file and directory listings.
 # c.FileNotebookManager.hide_globs = [u'__pycache__']

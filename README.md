@@ -1,7 +1,7 @@
 # WSPPDE - Windows&trade; Scientific Portable Python Development Environment
-`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines Python 2.7.6 (including the third party packages IPython, Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
+`WSPPDE` is a free portable Python development environment for MS Windows&trade; with focus on scientific applications. WSPPDE combines a Python 2.7.7 and IPython 2.1.0 stack (incl. 3rd party packages Matplotlib, NumPy, Pandas, SciPy) with the pre-configured Spyder2 IDE and an enhanced command console.
 
-What `WSPPDE` is all about can best be seen from the screenshot below (older screenshot based on WSPPDE-2013-1):
+What `WSPPDE` is all about can best be seen from the screenshot below:
 
 ![](docs/screenshot.png)
 

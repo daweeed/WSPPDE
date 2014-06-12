@@ -1,8 +1,8 @@
 sphinx==1.2.2
-pylint[logilab-common,astroid]==1.1.0
+pylint[logilab-common,astroid]==1.2.1
 pyflakes==0.8.1
-rope==0.9.4
-pep8==1.5.1
+rope==0.10.2
+pep8==1.5.7
 --allow-external spyder
 --allow-unverified spyder
 spyder==2.2.5

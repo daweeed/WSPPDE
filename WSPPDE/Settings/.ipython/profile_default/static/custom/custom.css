@@ -5,3 +5,17 @@ mainly to be overridden in profile/static/custom/custom.css
 
 This will always be an empty file in IPython
 */
+
+.text_cell_render pre code {
+    font-size: 90%;
+    border: 1px solid #eee;
+    padding: 0.5em;
+    background-color: #fafafa;
+    color: #444;
+    border-radius: 0.8em;
+}
+
+.text_cell_render p code {
+    font-size: 90%;
+    color: brown;
+}
