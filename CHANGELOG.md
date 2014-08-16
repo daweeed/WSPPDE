@@ -1,6 +1,12 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2014-3: Aug 16, 2014**
+
+- updated Python to 2.7.8
+- updated IPython to 2.2.0
+- updated all packages to the latest available version
+
 **2014-2: Jun 10, 2014**
 
 - reworked build scripts
