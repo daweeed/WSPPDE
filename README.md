@@ -12,9 +12,9 @@ WSPPDE is distributed as a self-extracting Windows installer build with the open
 
 1. Download latest [WSPPDE installer](http://www.heise.de/download/wsppde-1186495.html) from the download portale of the German computer magazine c`t
 <a title="WSPPDE, Download bei heise" href="http://www.heise.de/download/wsppde-1186495.html"><img alt="WSPPDE, Download bei heise" title="WSPPDE, Download bei heise" src="http://www.heise.de/software/icons/download_logo1.png" /></a>
-2. Excecute the installer and unpack the files to the desired target directory
+2. Excecute the installer and unpack the files to the desired target directory (choose a folder without special chars like: (, ), &, ä ...)
 
-Note: All Software hosted on the download portale of the German computer magazine [c´t](http://www.heise.de/ct/) is scanned with multiple virus engines before beeing published.
+Note: Software hosted on the download portale of the German computer magazine [c´t](http://www.heise.de/ct/) is scanned with multiple virus engines before beeing published.
 
 ## Usage
 WSPPDE provides two convenient methods to start Python out of the box. 
@@ -46,6 +46,9 @@ The links below provide further information about the software packages distribu
 - [Matplotlib](http://matplotlib.sourceforge.net/contents.html), [NumPy](http://docs.scipy.org/doc/), [SciPy](http://docs.scipy.org/doc/)
 - [Pandas](http://code.google.com/p/pandas/)
 - [Spyder](http://packages.python.org/spyder/)
+
+## Known issues
+WSPPDE, respectively parts of it (e.g. IPython) won't work when installed in a folder containing special characters (e.g. Unicode chars, (, ), &, Umlauts ...). 
 
 ## License
 WSPPDE is released under [BSD License](http://www.opensource.org/licenses/bsd-license.php).  
