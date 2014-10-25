@@ -10,10 +10,9 @@ REM * @license     http://www.opensource.org/licenses/bsd-license.php
 REM **************************************************************************
 
 REM ## Work out absolute root path to WSPPDE
-SET CWD=%CD%
-CHDIR %~dp0..
+PUSHD %~dp0..
 SET WSPPDE_ROOT=%CD%
-CHDIR %CWD%
+POPD
 
 REM ## Set WSPPDE variables
 SET WSPPDE_PYTHON=%WSPPDE_ROOT%\Python
@@ -25,5 +24,5 @@ SET HOME=%WSPPDE_ROOT%\Settings
 SET IPYTHONDIR=%HOME%\.ipython
 SET MPLCONFIGDIR=%HOME%\.matplotlib
 
-REM ## Preppend WSPPDE pathes to Windows PATH variable
+REM ## Prepend WSPPDE pathes to Windows PATH variable
 SET PATH=%WSPPDE_PYTHON%;%WSPPDE_PYTHON%\Lib\site-packages;%WSPPDE_PYTHON%\Scripts;%WSPPDE_REPOSITORY%;%PATH%
