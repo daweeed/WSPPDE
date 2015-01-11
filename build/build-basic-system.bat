@@ -29,8 +29,8 @@ ECHO ^>^> integrating python.msi ...
 msiexec /a %WSPPDE_DOWNLOADS%\python.msi /qb TARGETDIR=%WSPPDE_PYTHON%
 
 REM ## Install Python packaging tool pip
-ECHO ^>^> executing python get-pip.py ...
-%WSPPDE_PYTHON%\python.exe %WSPPDE_DOWNLOADS%\get-pip.py > NUL
+ECHO ^>^> installing pip via the ensurepip module ...
+%WSPPDE_PYTHON%\python.exe -m ensurepip --upgrade > NUL
 
 REM ## Clean up build system
 RD /S /Q %WSPPDE_TMP%
