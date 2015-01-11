@@ -41,7 +41,7 @@ By default packages located in the Python site-package folder or your local Repo
 ## Documentation
 The links below provide further information about the software packages distributed with WSPPDE.
 
-- [Python](http://docs.python.org/), [PyScripter](http://code.google.com/p/pyscripter/), [Console](http://sourceforge.net/projects/console/)
+- [Python](http://docs.python.org/), [Console](http://sourceforge.net/projects/console/)
 - [IPython](http://ipython.org/), [PyReadline](http://pypi.python.org/pypi/pyreadline), [pyzmq](http://www.zeromq.org/bindings:python), [Tornado](http://www.tornadoweb.org/)
 - [Matplotlib](http://matplotlib.sourceforge.net/contents.html), [NumPy](http://docs.scipy.org/doc/), [SciPy](http://docs.scipy.org/doc/)
 - [Pandas](http://code.google.com/p/pandas/)
