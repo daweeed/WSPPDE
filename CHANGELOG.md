@@ -1,6 +1,13 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2015-2: Feb 01, 2015**
+
+- updated IPython to 2.4.0
+- added packages pywin32, xlwings
+- removed PyXLL integration from config notebook
+- updated all packages to the latest available version
+
 **2015-1: Jan 11, 2015**
 
 - updated Python to 2.7.9

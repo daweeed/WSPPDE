@@ -15,7 +15,7 @@ SET VERBOSITY=--quiet
 ECHO.
 ECHO.
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ECHO + BUILDING WSPPDE SCIENTIFIC STACK (NUMPY, SCIPY, MATPLOTLIB, IPYTHON)
+ECHO + BUILDING SCIENTIFIC STACK (NUMPY, SCIPY, MATPLOTLIB, IPYTHON, PYWIN32)
 ECHO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 REM ## Include required scripts
@@ -43,14 +43,21 @@ ECHO ^>^> extracting pandas.exe ...
 ECHO ^>^> extracting pyside.exe ...
 %WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pyside.exe -o%WSPPDE_TMP%\SCIENTIFIC -y > NUL
 
+ECHO ^>^> extracting pywin32.exe ...
+%WSPPDE_BIN%\7z x %WSPPDE_DOWNLOADS%\pywin32.exe -o%WSPPDE_TMP%\SCIENTIFIC -y > NUL
+
 ECHO ^>^> integrating scientific binary packages ...
 IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PLATLIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PLATLIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y > NUL
 IF EXIST %WSPPDE_TMP%\SCIENTIFIC\PURELIB XCOPY %WSPPDE_TMP%\SCIENTIFIC\PURELIB\* %WSPPDE_PYTHON%\Lib\site-packages /s /i /q /Y > NUL
 IF EXIST %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS XCOPY %WSPPDE_TMP%\SCIENTIFIC\SCRIPTS\* %WSPPDE_PYTHON%\Scripts /s /i /q /Y > NUL
 
 REM ## Execute pyside postinstall script
-ECHO ^>^> executing python pyside_postinstall.py --install ...
+ECHO ^>^> executing python pyside_postinstall.py -install ...
 %WSPPDE_PYTHON%\python %WSPPDE_PYTHON%\Scripts\pyside_postinstall.py -install > NUL
+
+REM ## Execute pywin32 postinstall script
+ECHO ^>^> executing pywin32_postinstall.py -install ...
+%WSPPDE_PYTHON%\python %WSPPDE_PYTHON%\Scripts\pywin32_postinstall.py -install > NUL
 
 REM ## Install scientific packages using PIP defined in PACKAGES-PIP-SCIENTIFIC.txt
 ECHO ^>^> executing pip install --requirement PACKAGES-PIP-SCIENTIFIC.TXT %VERBOSITY% ...

@@ -1,3 +1,4 @@
 docs/*.snag
 .downloads/*
 .installer/*
+.notebooks/*
