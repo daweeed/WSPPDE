@@ -1,6 +1,11 @@
 # WSPPDE CHANGELOG
 Tracking changes applied for the WSPPDE releases.
 
+**2015-3: Mar 03, 2015**
+
+- updated IPython to 3.0.0
+- updated all packages to the latest available version
+
 **2015-2: Feb 01, 2015**
 
 - updated IPython to 2.4.0

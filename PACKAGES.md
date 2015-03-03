@@ -1,4 +1,4 @@
-# Packages distributed with WSPPDE 2015-2
+# Packages distributed with WSPPDE 2015-3
 
 ## Third party software
 - [Console-2.00b148-Beta_32bit](http://sourceforge.net/projects/console/files/)
@@ -12,14 +12,15 @@
 - certifi==14.05.14
 - colorama==0.3.3
 - docutils==0.12
-- ipython==2.4.0
+- ipython==3.0.0
 - Jinja2==2.7.3
+- jsonschema==2.4.0
 - logilab-common==0.63.2
 - MarkupSafe==0.23
-- matplotlib==1.4.2
-- numpy==1.9.1
+- matplotlib==1.4.3
+- numpy==1.9.2
 - pandas==0.15.2
-- pep8==1.5.7
+- pep8==1.6.2
 - pyflakes==0.8.1
 - Pygments==2.0.2
 - pylint==1.4.1
@@ -34,6 +35,6 @@
 - scipy==0.15.1
 - six==1.9.0
 - Sphinx==1.2.3
-- spyder==2.3.2
-- tornado==4.0.2
+- spyder==2.3.3
+- tornado==4.1
 - xlwings==0.3.2

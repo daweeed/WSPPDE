@@ -2,5 +2,5 @@ Sphinx==1.2.3
 pylint==1.4.1
 pyflakes==0.8.1
 rope==0.10.2
-pep8==1.5.7
-spyder==2.3.2
+pep8==1.6.2
+spyder==2.3.3

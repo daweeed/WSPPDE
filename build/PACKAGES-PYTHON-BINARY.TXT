@@ -1,7 +1,7 @@
 https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi | python.msi
-http://sourceforge.net/projects/numpy/files/NumPy/1.9.1/numpy-1.9.1-win32-superpack-python2.7.exe/download | numpy.exe
+http://sourceforge.net/projects/numpy/files/NumPy/1.9.2/numpy-1.9.2-win32-superpack-python2.7.exe/download | numpy.exe
 http://sourceforge.net/projects/scipy/files/scipy/0.15.1/scipy-0.15.1-win32-superpack-python2.7.exe/download | scipy.exe
-http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.4.2/windows/matplotlib-1.4.2.win32-py2.7.exe/download | matplotlib.exe
+http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.4.3/windows/matplotlib-1.4.3.win32-py2.7.exe/download | matplotlib.exe
 https://pypi.python.org/packages/2.7/p/pandas/pandas-0.15.2.win32-py2.7.exe | pandas.exe
 http://download.qt.io/official_releases/pyside/PySide-1.2.2.win32-py2.7.exe | pyside.exe
 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/pywin32-219.win32-py2.7.exe/download | pywin32.exe
